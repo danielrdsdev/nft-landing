@@ -1,3 +1,4 @@
+import { ChooseSection } from '@/components/choose-section'
 import { CollectionSection } from '@/components/collection-section'
 import { Divider } from '@/components/divider'
 import { EnterprisesSection } from '@/components/enterprises-section'
@@ -12,6 +13,10 @@ export default function Home() {
       <Divider />
 
       <CollectionSection />
+
+      <Divider />
+
+      <ChooseSection />
     </>
   )
 }

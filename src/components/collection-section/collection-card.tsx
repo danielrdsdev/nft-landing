@@ -18,6 +18,7 @@ export const CollectionCard = ({
           src={collectionImage}
           alt={collectionTitle}
           fill
+          sizes="100%"
           className="object-cover"
         />
       </div>
