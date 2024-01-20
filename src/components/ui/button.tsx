@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          'bg-gradient-to-r from-primary to-secondary rounded-full h-16 px-4 py-2 rounded-full',
+          'bg-gradient-to-r from-primary to-secondary rounded-full h-16 px-8 py-3 rounded-full',
         icon: 'border bg-background hover:bg-muted h-10 w-10 rounded-md',
       },
     },
