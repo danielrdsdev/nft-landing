@@ -1,3 +1,5 @@
+import { Icons } from '@/components/icons'
+import { Button } from '@/components/ui/button'
 import {
   Sheet,
   SheetContent,
@@ -7,8 +9,6 @@ import {
 } from '@/components/ui/sheet'
 import { MAIN_LINKS, SOCIAL_LINKS } from '@/config/nav'
 import Link from 'next/link'
-import { Icons } from '../icons'
-import { Button } from '../ui/button'
 
 export const MobileNav = () => {
   return (
