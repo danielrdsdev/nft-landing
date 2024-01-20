@@ -36,11 +36,20 @@ export const MobileNav = () => {
 
         <div className="flex items-center justify-center gap-3 py-8">
           {SOCIAL_LINKS.map((link) => (
-            <Button key={link.href} variant="icon" asChild className="bg-black">
-              <a href={link.href} target="_blank" rel="noopener noreferrer">
-                <link.icon className="h-6 w-6" />
-              </a>
-            </Button>
+            <>
+              {link.mobile === true && (
+                <Button
+                  key={link.href}
+                  variant="icon"
+                  asChild
+                  className="bg-black"
+                >
+                  <a href={link.href} target="_blank" rel="noopener noreferrer">
+                    <link.icon className="h-6 w-6" />
+                  </a>
+                </Button>
+              )}
+            </>
           ))}
         </div>
       </SheetContent>

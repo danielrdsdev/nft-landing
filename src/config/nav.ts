@@ -29,19 +29,39 @@ export const MAIN_LINKS = [
 
 export const SOCIAL_LINKS = [
   {
-    icon: Icons.twitter,
+    icon: Icons.facebook,
     href: 'https://twitter.com/0xNFT',
+    mobile: true,
+    desktop: false,
   },
   {
-    icon: Icons.discord,
-    href: 'https://discord.gg/0xNFT',
+    icon: Icons.twitter,
+    href: 'https://twitter.com/0xNFT',
+    mobile: true,
+    desktop: true,
   },
   {
     icon: Icons.instagram,
     href: 'https://medium.com/0xNFT',
+    mobile: true,
+    desktop: true,
   },
   {
-    icon: Icons.file,
+    icon: Icons.discord,
+    href: 'https://discord.gg/0xNFT',
+    mobile: true,
+    desktop: true,
+  },
+  {
+    icon: Icons.inbox,
+    href: 'https://discord.gg/0xNFT',
+    mobile: true,
+    desktop: false,
+  },
+  {
+    icon: Icons.card,
     href: 'https://instagram.com/0xNFT',
+    mobile: false,
+    desktop: true,
   },
 ]

@@ -21,14 +21,18 @@ export const Header = () => {
 
       <div className="hidden items-center gap-5 lg:flex">
         {SOCIAL_LINKS.map((link) => (
-          <a
-            key={link.href}
-            href={link.href}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <link.icon className="h-6 w-6" />
-          </a>
+          <>
+            {link.desktop === true && (
+              <a
+                key={link.href}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <link.icon className="h-6 w-6" />
+              </a>
+            )}
+          </>
         ))}
       </div>
     </header>
