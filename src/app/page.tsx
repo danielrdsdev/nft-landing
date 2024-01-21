@@ -7,6 +7,7 @@ import { DataSection } from '@/components/data-section'
 import { Divider } from '@/components/divider'
 import { EnterprisesSection } from '@/components/enterprises-section'
 import { HeroSection } from '@/components/hero-section'
+import { QASection } from '@/components/qa-section'
 import { RoadmapSection } from '@/components/roadmap-section'
 
 export default function Home() {
@@ -43,6 +44,10 @@ export default function Home() {
       <Divider />
 
       <ArtistSection />
+
+      <Divider />
+
+      <QASection />
     </>
   )
 }
