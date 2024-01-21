@@ -7,16 +7,48 @@ export const ContactSection = () => {
   return (
     <section className="rounded-4xl container relative space-y-8 border px-14 py-16">
       <div className="absolute left-[96px] top-[51px]">
-        <Image src="/circle-01.png" alt="img" width={16} height={16} />
+        <div className="relative h-4 w-4">
+          <Image
+            src="/circle-01.png"
+            alt="img"
+            fill
+            sizes="100%"
+            className="object-contain"
+          />
+        </div>
       </div>
       <div className="absolute right-[192px] top-[51px]">
-        <Image src="/x.png" alt="img" width={24} height={24} />
+        <div className="relative h-6 w-6">
+          <Image
+            src="/x.png"
+            alt="img"
+            fill
+            sizes="100%"
+            className="object-contain"
+          />
+        </div>
       </div>
       <div className="absolute bottom-[76px] left-[192px]">
-        <Image src="/dcoin.png" alt="img" width={32} height={32} />
+        <div className="relative h-8 w-8">
+          <Image
+            src="/dcoin.png"
+            alt="img"
+            fill
+            sizes="100%"
+            className="object-contain"
+          />
+        </div>
       </div>
       <div className="absolute bottom-[51px] right-[96px]">
-        <Image src="/ethereum-02.png" alt="img" width={44} height={44} />
+        <div className="relative h-11 w-11">
+          <Image
+            src="/ethereum-02.png"
+            alt="img"
+            fill
+            sizes="100%"
+            className="object-contain"
+          />
+        </div>
       </div>
       <div className="space-y-4">
         <SectionTitle titlePrimary="Never" titleSecondary="miss a drop!" />

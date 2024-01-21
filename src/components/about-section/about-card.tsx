@@ -21,7 +21,15 @@ export const AboutCard = ({
 }: AboutCardProps) => {
   return (
     <div className="flex items-center gap-32 even:flex-row-reverse">
-      <Image src={aboutImage} alt={aboutTitle} width={535} height={517} />
+      <div className="relative h-[517px] w-[535px]">
+        <Image
+          src={aboutImage}
+          alt={aboutTitle}
+          fill
+          sizes="100%"
+          className="object-contain"
+        />
+      </div>
 
       <div className="flex flex-col space-y-8">
         <div className="space-y-4">

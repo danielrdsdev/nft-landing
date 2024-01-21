@@ -21,7 +21,15 @@ export const ArtistCard = ({
   return (
     <div className="flex w-[277px] flex-col items-center justify-center space-y-6 even:-mt-16">
       <div className="rounded-4xl bg-muted/25 w-fit border p-2">
-        <Image src={artistImage} alt={artistName} width={142} height={142} />
+        <div className="relative h-[142px] w-[142px]">
+          <Image
+            src={artistImage}
+            alt={artistName}
+            fill
+            sizes="100%"
+            className="object-cover"
+          />
+        </div>
       </div>
 
       <div className="space-y-1">
@@ -32,7 +40,7 @@ export const ArtistCard = ({
       <div className="flex items-center gap-4">
         {socials.map((social) => (
           <a
-            key={social.name}
+            key={social.link}
             href={social.link}
             target="_blank"
             rel="noreferrer noopener"

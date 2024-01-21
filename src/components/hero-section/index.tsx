@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
+import { Icons } from '../icons'
 
 export const HeroSection = () => {
   return (
@@ -21,26 +22,15 @@ export const HeroSection = () => {
 
         <div className="flex items-center gap-4">
           <div className="flex items-center">
-            <Image
-              src="/avatar-01.png"
-              alt="Avatar 01"
-              width={48}
-              height={48}
-            />
-            <Image
-              src="/avatar-02.png"
-              alt="Avatar 02"
-              width={48}
-              height={48}
-              className="relative right-5"
-            />
-            <Image
-              src="/avatar-03.png"
-              alt="Avatar 03"
-              width={48}
-              height={48}
-              className="relative right-10"
-            />
+            <div className="relative h-12 w-12">
+              <Image src="/avatar-01.png" alt="Avatar 01" fill sizes="100%" />
+            </div>
+            <div className="relative right-5 h-12 w-12">
+              <Image src="/avatar-02.png" alt="Avatar 02" fill sizes="100%" />
+            </div>
+            <div className="relative right-10 h-12 w-12">
+              <Image src="/avatar-03.png" alt="Avatar 03" fill sizes="100%" />
+            </div>
           </div>
 
           <div className="flex flex-col">
@@ -52,18 +42,22 @@ export const HeroSection = () => {
 
       <div className="relative h-full w-full">
         <div className="absolute left-0 top-0 h-[271px] w-[271px]">
-          <Image src="/art_01.png" alt="Art 01" fill />
+          <Image src="/art_01.png" alt="Art 01" fill sizes="100%" />
         </div>
 
         <div className="absolute bottom-0 right-0 h-[271px] w-[271px]">
-          <Image src="/art_03.png" alt="Art 01" fill />
+          <Image src="/art_03.png" alt="Art 01" fill sizes="100%" />
 
           <div className="absolute left-10 top-10 -z-10 h-[240px] w-[240px] -rotate-[10deg] rounded-[48px] border" />
         </div>
 
-        <div className="absolute bottom-[10%] h-10 w-10 -translate-y-[10%] rounded-full border" />
+        <div className="absolute bottom-[10%] -translate-y-[10%] opacity-25">
+          <Icons.heroCircle01 />
+        </div>
 
-        <div className="absolute right-[20%] top-0 h-10 w-10 -translate-x-[20%] rounded-full bg-muted" />
+        <div className="absolute right-[20%] top-0 -translate-x-[20%] opacity-25">
+          <Icons.heroCircle02 />
+        </div>
       </div>
     </section>
   )

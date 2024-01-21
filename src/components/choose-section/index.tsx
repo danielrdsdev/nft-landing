@@ -46,13 +46,37 @@ export const ChooseSection = () => {
       </div>
 
       <div className="absolute left-[111px] top-0">
-        <Image src="/circle-01.png" width={16} height={16} alt="x" />
+        <div className="relative h-4 w-4">
+          <Image
+            src="/circle-01.png"
+            alt="x"
+            fill
+            sizes="100%"
+            className="object-contain"
+          />
+        </div>
       </div>
       <div className="absolute -left-[81px] bottom-[66px]">
-        <Image src="/x.png" width={28} height={28} alt="x" />
+        <div className="relative h-7 w-7">
+          <Image
+            src="/x.png"
+            alt="x"
+            fill
+            sizes="100%"
+            className="object-contain"
+          />
+        </div>
       </div>
       <div className="absolute -right-[111px] bottom-[66px]">
-        <Image src="/circle-02.png" width={24} height={24} alt="x" />
+        <div className="relative h-6 w-6">
+          <Image
+            src="/circle-02.png"
+            alt="x"
+            fill
+            sizes="100%"
+            className="object-contain"
+          />
+        </div>
       </div>
     </section>
   )
