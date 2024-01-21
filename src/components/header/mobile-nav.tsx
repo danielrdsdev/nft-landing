@@ -47,6 +47,7 @@ export const MobileNav = () => {
                 >
                   <a href={link.href} target="_blank" rel="noopener noreferrer">
                     <link.icon className="h-6 w-6" />
+                    <span className="sr-only">Social icon</span>
                   </a>
                 </Button>
               )}

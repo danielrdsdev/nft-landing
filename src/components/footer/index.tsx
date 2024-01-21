@@ -20,6 +20,7 @@ export const Footer = () => {
               {SOCIAL_LINKS.map((link) => (
                 <a key={link.href} href={link.href}>
                   <link.icon className="h-6 w-6" />
+                  <span className="sr-only">Social icon</span>
                 </a>
               ))}
             </div>
