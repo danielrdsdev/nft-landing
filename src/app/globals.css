@@ -36,4 +36,12 @@ html,
   body {
     @apply bg-background text-foreground antialiased font-primary;
   }
+
+  ::-webkit-scrollbar {
+    @apply w-2 h-1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-primary to-secondary rounded-full;
+  }
 }
