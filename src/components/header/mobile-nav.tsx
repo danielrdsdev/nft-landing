@@ -15,6 +15,7 @@ export const MobileNav = () => {
     <Sheet>
       <SheetTrigger>
         <Icons.menu className="h-8 w-8" />
+        <span className="sr-only">Mobile menu</span>
       </SheetTrigger>
       <SheetContent side="left" className="bg-black p-0">
         <SheetHeader className="p-6">
