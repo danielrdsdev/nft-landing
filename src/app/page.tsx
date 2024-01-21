@@ -1,4 +1,5 @@
 import { AboutSection } from '@/components/about-section'
+import { ArtistSection } from '@/components/artist-section'
 import { ChooseSection } from '@/components/choose-section'
 import { CollectionSection } from '@/components/collection-section'
 import { CTASection } from '@/components/cta-section'
@@ -38,6 +39,10 @@ export default function Home() {
       <Divider />
 
       <RoadmapSection />
+
+      <Divider />
+
+      <ArtistSection />
     </>
   )
 }

@@ -5,7 +5,7 @@ import { Input } from '../ui/input'
 
 export const CTASection = () => {
   return (
-    <section className="container relative space-y-8 rounded-[32px] border px-14 py-16">
+    <section className="container relative space-y-8 rounded-4xl border px-14 py-16">
       <div className="absolute left-[96px] top-[51px]">
         <Image src="/circle-01.png" alt="img" width={16} height={16} />
       </div>

@@ -29,6 +29,9 @@ const config = {
         primary: ['var(--font-inter)'],
         secondary: ['var(--font-orbitron)'],
       },
+      borderRadius: {
+        '4xl': '2rem',
+      },
       keyframes: {
         'accordion-down': {
           from: { height: '0' },
