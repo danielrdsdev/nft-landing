@@ -24,7 +24,7 @@ export const RoadmapCard = ({
           phase 0{index}
         </span>
 
-        <div className="flex h-12 w-12 rotate-[16deg] flex-col items-center justify-center rounded-full bg-gradient-to-br from-primary to-secondary">
+        <div className="text-primary-foreground flex h-12 w-12 rotate-[16deg] flex-col items-center justify-center rounded-full bg-gradient-to-br from-primary to-secondary">
           <span className="text-2xl font-bold leading-none">{percentage}</span>
           <span className="font-bold leading-none">%</span>
         </div>

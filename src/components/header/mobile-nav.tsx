@@ -17,10 +17,10 @@ export const MobileNav = () => {
         <Icons.menu className="h-8 w-8" />
         <span className="sr-only">Mobile menu</span>
       </SheetTrigger>
-      <SheetContent side="left" className="bg-black p-0">
+      <SheetContent side="left" className="bg-background p-0">
         <SheetHeader className="p-6">
           <SheetTitle>
-            <Icons.logo className="h-8 w-32" />
+            <Icons.logo className="h-8 w-32 fill-foreground" />
           </SheetTitle>
         </SheetHeader>
         <nav className="divide-border/10 border-border/10 flex flex-col divide-y border-y">
@@ -39,14 +39,9 @@ export const MobileNav = () => {
           {SOCIAL_LINKS.map((link) => (
             <>
               {link.mobile === true && (
-                <Button
-                  key={link.href}
-                  variant="icon"
-                  asChild
-                  className="bg-black"
-                >
+                <Button key={link.href} variant="icon" asChild>
                   <a href={link.href} target="_blank" rel="noopener noreferrer">
-                    <link.icon className="h-6 w-6" />
+                    <link.icon className="h-6 w-6 fill-foreground" />
                     <span className="sr-only">Social icon</span>
                   </a>
                 </Button>

@@ -6,7 +6,7 @@ export const LayerImages = () => {
       <div className="absolute left-[111px] top-0">
         <div className="relative h-4 w-4">
           <Image
-            src="/circle-01.png"
+            src="/layers/circle-01.png"
             alt="x"
             fill
             sizes="100%"
@@ -28,7 +28,7 @@ export const LayerImages = () => {
       <div className="absolute -right-[111px] bottom-[66px]">
         <div className="relative h-6 w-6">
           <Image
-            src="/circle-02.png"
+            src="/layers/circle-02.png"
             alt="x"
             fill
             sizes="100%"

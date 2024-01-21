@@ -6,7 +6,7 @@ export const LayerImages = () => {
       <div className="absolute left-[96px] top-[51px]">
         <div className="relative h-4 w-4">
           <Image
-            src="/circle-01.png"
+            src="/layers/circle-01.png"
             alt="img"
             fill
             sizes="100%"

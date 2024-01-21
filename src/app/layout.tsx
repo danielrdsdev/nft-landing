@@ -1,5 +1,6 @@
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
+import { ThemeProvider } from '@/components/theme-provider'
 import { inter, orbitron } from '@/lib/fonts'
 import type { Metadata } from 'next'
 import './globals.css'
@@ -15,15 +16,17 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-br" suppressHydrationWarning>
       <body className={`${inter.variable} ${orbitron.variable}`}>
-        <div className="flex min-h-full flex-col">
-          <Header />
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <div className="flex min-h-full flex-col">
+            <Header />
 
-          <main className="flex-1">{children}</main>
+            <main className="flex-1">{children}</main>
 
-          <Footer />
-        </div>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   )

@@ -21,7 +21,10 @@ const config = {
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
-        primary: 'hsl(var(--primary))',
+        primary: {
+          DEFAULT: 'hsl(var(--primary))',
+          foreground: 'hsl(var(--primary-foreground))',
+        },
         secondary: 'hsl(var(--secondary))',
         muted: 'hsl(var(--muted))',
       },

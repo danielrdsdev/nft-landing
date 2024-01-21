@@ -5,7 +5,7 @@ import { LayerImages } from './layer-images'
 
 export const ContactSection = () => {
   return (
-    <section className="rounded-4xl container relative space-y-8 border px-14 py-16">
+    <section className="container relative space-y-8 rounded-4xl border px-14 py-16">
       <LayerImages />
 
       <div className="space-y-4">

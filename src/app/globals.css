@@ -14,6 +14,7 @@ html,
     --foreground: 265 71% 7%;
 
     --primary: 249 100% 49%;
+    --primary-foreground: 0 0% 100%;
     --secondary: 300 100% 50%;
 
     --muted: 266 6% 49%
@@ -33,6 +34,6 @@ html,
   }
 
   body {
-    @apply bg-background text-foreground antialiased font-primary dark;
+    @apply bg-background text-foreground antialiased font-primary;
   }
 }

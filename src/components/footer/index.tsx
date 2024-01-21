@@ -19,7 +19,7 @@ export const Footer = () => {
             <div className="flex items-center gap-4">
               {SOCIAL_LINKS.map((link) => (
                 <a key={link.href} href={link.href}>
-                  <link.icon className="h-6 w-6" />
+                  <link.icon className="h-6 w-6 fill-foreground" />
                   <span className="sr-only">Social icon</span>
                 </a>
               ))}
