@@ -10,27 +10,26 @@ html,
 
 @layer base {
   :root {
-    --background: #FFFF;
-    --foreground: #0F051D;
+    --background: 0 0% 100%;
+    --foreground: 265 71% 7%;
 
-    --primary: #2600FC;
-    --secondary: #FF00FF;
+    --primary: 249 100% 49%;
+    --secondary: 300 100% 50%;
 
-    --muted: #7B7583
-
+    --muted: 266 6% 49%
   }
 
   .dark {
-    --background: #0F051D;
-    --foreground: #FFFF;
+    --background: 265 71% 7%;
+    --foreground: 0 0% 100%;
 
-    --muted: #B7B4BB
+    --muted: 266 5% 72%
   }
 }
 
 @layer base {
   * {
-    @apply border-muted;
+    @apply border-muted/25;
   }
 
   body {

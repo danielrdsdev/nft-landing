@@ -19,11 +19,11 @@ const config = {
     },
     extend: {
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
-        primary: 'var(--primary)',
-        secondary: 'var(--secondary)',
-        muted: 'var(--muted)',
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
+        primary: 'hsl(var(--primary))',
+        secondary: 'hsl(var(--secondary))',
+        muted: 'hsl(var(--muted))',
       },
       fontFamily: {
         primary: ['var(--font-inter)'],

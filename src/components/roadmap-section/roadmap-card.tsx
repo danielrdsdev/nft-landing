@@ -18,7 +18,7 @@ export const RoadmapCard = ({
   roadmapEssentials,
 }: RoadmapCardProps) => {
   return (
-    <div className="relative space-y-8 rounded-4xl border px-8 py-6">
+    <div className="rounded-4xl relative space-y-8 border px-8 py-6">
       <div className="flex items-center justify-between">
         <span className="bg-gradient-to-br from-primary to-secondary bg-clip-text font-bold uppercase text-transparent">
           phase 0{index}
@@ -33,7 +33,7 @@ export const RoadmapCard = ({
       <h3 className="text-3xl font-bold">{roadmapTitle}</h3>
       <p className="text-lg text-muted">{roadmapDescription}</p>
 
-      <span className="block h-[1px] w-20 bg-muted" />
+      <span className="bg-muted/25 block h-[1px] w-20" />
 
       <div className="space-y-3">
         {roadmapEssentials.map((essential, i) => (

@@ -20,7 +20,7 @@ export const ArtistCard = ({
 }: ArtistCardProps) => {
   return (
     <div className="flex w-[277px] flex-col items-center justify-center space-y-6 even:-mt-16">
-      <div className="rounded-4xl w-fit border bg-muted p-2">
+      <div className="rounded-4xl bg-muted/25 w-fit border p-2">
         <Image src={artistImage} alt={artistName} width={142} height={142} />
       </div>
 
