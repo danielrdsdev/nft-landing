@@ -32,10 +32,26 @@ export const DataSection = () => {
       ))}
 
       <div className="absolute -top-[26px] right-[75px] lg:-top-[38px] lg:right-[285px]">
-        <Image src="/ethereum-01.png" alt="bitcoin" width={24} height={24} />
+        <div className="relative h-6 w-6">
+          <Image
+            src="/ethereum-01.png"
+            alt="bitcoin"
+            fill
+            sizes="100%"
+            className="object-contain"
+          />
+        </div>
       </div>
       <div className="absolute -bottom-[69px] left-[51px] lg:-bottom-[49px] lg:left-[375px]">
-        <Image src="/bitcoin-01.png" alt="bitcoin" width={32} height={32} />
+        <div className="relative h-8 w-8">
+          <Image
+            src="/bitcoin-01.png"
+            alt="bitcoin"
+            fill
+            sizes="100%"
+            className="object-contain"
+          />
+        </div>
       </div>
     </section>
   )
