@@ -1,3 +1,4 @@
+import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { inter, orbitron } from '@/lib/fonts'
 import type { Metadata } from 'next'
@@ -20,6 +21,8 @@ export default function RootLayout({
           <Header />
 
           <main className="flex-1">{children}</main>
+
+          <Footer />
         </div>
       </body>
     </html>
