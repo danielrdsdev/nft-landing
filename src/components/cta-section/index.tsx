@@ -1,35 +1,34 @@
-import { SectionTitle } from '@/components/section-title'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
+import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
+import { SectionTitle } from '../section-title'
+import { Button } from '../ui/button'
 
 export const CTASection = () => {
   return (
-    <section className="container relative space-y-8 rounded-4xl border px-14 py-16">
-      <div className="absolute left-[96px] top-[51px]">
-        <Image src="/circle-01.png" alt="img" width={16} height={16} />
-      </div>
-      <div className="absolute right-[192px] top-[51px]">
-        <Image src="/x.png" alt="img" width={24} height={24} />
-      </div>
-      <div className="absolute bottom-[76px] left-[192px]">
-        <Image src="/dcoin.png" alt="img" width={32} height={32} />
-      </div>
-      <div className="absolute bottom-[51px] right-[96px]">
-        <Image src="/ethereum-02.png" alt="img" width={44} height={44} />
-      </div>
-      <div className="space-y-4">
-        <SectionTitle titlePrimary="Never" titleSecondary="miss a drop!" />
-        <p className="text-center text-lg text-muted">
-          Subscribe to our super-rare and exclusive drops & collectibles.
+    <section className="relative flex h-[633px] w-full flex-col items-center justify-center space-y-12">
+      <Image
+        src="/cta-img.png"
+        alt="img"
+        fill
+        className="-z-10 object-cover opacity-25"
+      />
+
+      <div className="space-y-6">
+        <SectionTitle
+          className="mx-auto max-w-lg"
+          titlePrimary="Lets start"
+          titleSecondary="minting"
+        />
+
+        <p className="text-center text-xl text-muted">
+          Invest and manage all your NFTs at one place.
         </p>
       </div>
 
-      <form className="mx-auto flex max-w-lg items-center justify-center gap-3">
-        <Input placeholder="Enter your email" />
-
-        <Button className="w-fit">Subscribe</Button>
-      </form>
+      <Button>
+        Get started
+        <ArrowUpRight className="ml-2 h-6 w-6" />
+      </Button>
     </section>
   )
 }
