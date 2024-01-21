@@ -6,25 +6,25 @@ import { CollectionCard } from './collection-card'
 const collections = [
   {
     id: 1,
-    collectionImage: '/card-01.png',
+    collectionImage: '/card/card-01.png',
     collectionTitle: '#Metaverse',
     collectionDescription: 'By TheSalvare',
   },
   {
     id: 2,
-    collectionImage: '/card-02.png',
+    collectionImage: '/card/card-02.png',
     collectionTitle: '#Polly Doll',
     collectionDescription: 'By TheNative',
   },
   {
     id: 3,
-    collectionImage: '/card-03.png',
+    collectionImage: '/card/card-03.png',
     collectionTitle: '#Alec Art',
     collectionDescription: 'By GeorgZvic',
   },
   {
     id: 4,
-    collectionImage: '/card-04.png',
+    collectionImage: '/card/card-04.png',
     collectionTitle: '#Toxic Poeth',
     collectionDescription: 'By YazoiLup',
   },

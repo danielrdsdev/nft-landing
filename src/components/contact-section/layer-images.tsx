@@ -28,7 +28,7 @@ export const LayerImages = () => {
       <div className="absolute bottom-[76px] left-[192px]">
         <div className="relative h-8 w-8">
           <Image
-            src="/dcoin.png"
+            src="/layers/dcoin.png"
             alt="img"
             fill
             sizes="100%"
@@ -39,7 +39,7 @@ export const LayerImages = () => {
       <div className="absolute bottom-[51px] right-[96px]">
         <div className="relative h-11 w-11">
           <Image
-            src="/ethereum-02.png"
+            src="/layers/ethereum-02.png"
             alt="img"
             fill
             sizes="100%"

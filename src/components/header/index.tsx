@@ -4,7 +4,7 @@ import { NavLink } from './nav-link'
 
 export const Header = () => {
   return (
-    <header className="bg-background/80 sticky top-0 z-50 h-20 border-b backdrop-blur-sm">
+    <header className="sticky top-0 z-50 h-20 border-b bg-background/80 backdrop-blur-sm">
       <div className="container flex h-full items-center justify-between">
         <h1 className="font-secondary text-2xl font-extrabold">NFTHub</h1>
 

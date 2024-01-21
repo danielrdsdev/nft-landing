@@ -4,7 +4,7 @@ import { ArtistCard } from './artist-card'
 
 const artists = [
   {
-    artistImage: '/artist-01.png',
+    artistImage: '/artist/artist-01.png',
     artistName: 'Steps Jobs',
     artistDescription: 'Artist',
     socials: [
@@ -26,7 +26,7 @@ const artists = [
     ],
   },
   {
-    artistImage: '/artist-02.png',
+    artistImage: '/artist/artist-02.png',
     artistName: 'Andry Moray',
     artistDescription: 'Blockchain',
     socials: [
@@ -48,7 +48,7 @@ const artists = [
     ],
   },
   {
-    artistImage: '/artist-03.png',
+    artistImage: '/artist/artist-03.png',
     artistName: 'Zaid Ed',
     artistDescription: 'Developer',
     socials: [
@@ -70,7 +70,7 @@ const artists = [
     ],
   },
   {
-    artistImage: '/artist-04.png',
+    artistImage: '/artist/artist-04.png',
     artistName: 'Laila Ed',
     artistDescription: 'Marketing',
     socials: [
