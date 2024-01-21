@@ -1,6 +1,7 @@
 import { AboutSection } from '@/components/about-section'
 import { ChooseSection } from '@/components/choose-section'
 import { CollectionSection } from '@/components/collection-section'
+import { CTASection } from '@/components/cta-section'
 import { DataSection } from '@/components/data-section'
 import { Divider } from '@/components/divider'
 import { EnterprisesSection } from '@/components/enterprises-section'
@@ -28,6 +29,10 @@ export default function Home() {
       <Divider />
 
       <AboutSection />
+
+      <Divider />
+
+      <CTASection />
     </>
   )
 }
