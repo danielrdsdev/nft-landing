@@ -1,10 +1,10 @@
+import { SectionTitle } from '@/components/section-title'
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
-import { SectionTitle } from './section-title'
 
 const qaItems = [
   {
