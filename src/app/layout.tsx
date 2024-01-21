@@ -1,3 +1,4 @@
+import { BackToTop } from '@/components/back-to-top'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
 import { ThemeProvider } from '@/components/theme-provider'
@@ -26,6 +27,8 @@ export default function RootLayout({
 
             <Footer />
           </div>
+
+          <BackToTop />
         </ThemeProvider>
       </body>
     </html>
