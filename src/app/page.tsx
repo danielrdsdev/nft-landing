@@ -1,3 +1,4 @@
+import { AboutSection } from '@/components/about-section'
 import { ChooseSection } from '@/components/choose-section'
 import { CollectionSection } from '@/components/collection-section'
 import { DataSection } from '@/components/data-section'
@@ -23,6 +24,10 @@ export default function Home() {
       <Divider />
 
       <DataSection />
+
+      <Divider />
+
+      <AboutSection />
     </>
   )
 }
