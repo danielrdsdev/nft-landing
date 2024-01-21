@@ -38,6 +38,7 @@ export const ArtistCard = ({
             rel="noreferrer noopener"
           >
             <social.icon className="h-5 w-5" />
+            <span className="sr-only">Social icon</span>
           </a>
         ))}
       </div>

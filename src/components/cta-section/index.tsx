@@ -1,7 +1,7 @@
+import { SectionTitle } from '@/components/section-title'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
 import Image from 'next/image'
-import { SectionTitle } from '../section-title'
-import { Button } from '../ui/button'
-import { Input } from '../ui/input'
 
 export const CTASection = () => {
   return (

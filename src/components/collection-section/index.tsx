@@ -1,6 +1,6 @@
 import { SectionTitle } from '@/components/section-title'
+import { Button } from '@/components/ui/button'
 import { ArrowUpRight } from 'lucide-react'
-import { Button } from '../ui/button'
 import { CollectionCard } from './collection-card'
 
 const collections = [

@@ -38,6 +38,7 @@ export const AboutCard = ({
         >
           Learn more
           <ArrowUpRight className="ml-2 h-6 w-6" />
+          <span className="sr-only">Link learn more</span>
         </Link>
       </div>
     </div>

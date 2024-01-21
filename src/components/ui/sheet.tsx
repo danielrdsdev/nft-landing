@@ -120,7 +120,7 @@ const SheetDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <SheetPrimitive.Description
     ref={ref}
-    className={cn('text-muted text-sm', className)}
+    className={cn('text-sm text-muted', className)}
     {...props}
   />
 ))
@@ -136,6 +136,5 @@ export {
   SheetOverlay,
   SheetPortal,
   SheetTitle,
-  SheetTrigger
+  SheetTrigger,
 }
-

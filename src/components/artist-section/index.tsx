@@ -1,5 +1,5 @@
-import { Icons } from '../icons'
-import { SectionTitle } from '../section-title'
+import { Icons } from '@/components/icons'
+import { SectionTitle } from '@/components/section-title'
 import { ArtistCard } from './artist-card'
 
 const artists = [

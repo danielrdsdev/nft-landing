@@ -1,6 +1,6 @@
+import { Icons } from '@/components/icons'
 import { SectionTitle } from '@/components/section-title'
 import Image from 'next/image'
-import { Icons } from '../icons'
 import { ChooseCard } from './choose-card'
 
 const chooses = [

@@ -1,4 +1,4 @@
-import { SectionTitle } from '../section-title'
+import { SectionTitle } from '@/components/section-title'
 import { RoadmapCard } from './roadmap-card'
 
 const roadmapCards = [
