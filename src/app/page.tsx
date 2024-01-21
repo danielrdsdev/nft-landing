@@ -6,6 +6,7 @@ import { DataSection } from '@/components/data-section'
 import { Divider } from '@/components/divider'
 import { EnterprisesSection } from '@/components/enterprises-section'
 import { HeroSection } from '@/components/hero-section'
+import { RoadmapSection } from '@/components/roadmap-section'
 
 export default function Home() {
   return (
@@ -33,6 +34,10 @@ export default function Home() {
       <Divider />
 
       <CTASection />
+
+      <Divider />
+
+      <RoadmapSection />
     </>
   )
 }
