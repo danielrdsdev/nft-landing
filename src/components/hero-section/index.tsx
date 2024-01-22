@@ -6,7 +6,7 @@ import { LayerImages } from './layer-images'
 
 export const HeroSection = () => {
   return (
-    <section className="relative -mt-20 min-h-[70dvh] w-full pb-72 pt-64">
+    <section className="relative min-h-[70dvh] w-full py-52">
       <Image
         src="/hero-background-light.png"
         alt="Background hero"
@@ -15,10 +15,10 @@ export const HeroSection = () => {
         className="-z-10 object-cover dark:hidden"
       />
       <div className="container grid grid-cols-1 gap-4 lg:grid-cols-2">
-        <div className="flex max-w-[585px] flex-col space-y-8">
+        <div className="flex max-w-[585px] flex-col space-y-16">
           <div className="space-y-2">
             <h1 className="text-7xl font-bold">High Quality NFT Collection</h1>
-            <p className="text-xl text-muted">
+            <p className="max-w-sm text-xl text-muted">
               A 890 piece custom Nerkos collection is joining the NFT space on
               Opensea.
             </p>

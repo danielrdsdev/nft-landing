@@ -31,14 +31,16 @@ export const AboutCard = ({
         />
       </div>
 
-      <div className="flex flex-col space-y-8">
+      <div className="flex max-w-2xl flex-col space-y-8">
         <div className="space-y-4">
           <span className="bg-gradient-to-br from-primary to-secondary bg-clip-text text-lg font-bold text-transparent">
             0{index}.
           </span>
           <h3 className="max-w-sm text-6xl font-bold">{aboutTitle}</h3>
-          <p className="text-lg text-muted">{aboutDescription}</p>
-          <p className="text-lg text-muted">{aboutDescriptionSecondary}</p>
+          <p className="max-w-lg text-lg text-muted">{aboutDescription}</p>
+          <p className="max-w-lg text-lg text-muted">
+            {aboutDescriptionSecondary}
+          </p>
         </div>
         <Link
           href={aboutLink}

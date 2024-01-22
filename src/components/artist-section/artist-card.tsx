@@ -19,7 +19,7 @@ export const ArtistCard = ({
   socials,
 }: ArtistCardProps) => {
   return (
-    <div className="flex w-[277px] flex-col items-center justify-center space-y-6 even:-mt-16">
+    <div className="flex w-[277px] flex-col items-center justify-center space-y-6 even:-mt-10">
       <div className="w-fit rounded-4xl border bg-muted/25 p-2">
         <div className="relative h-[142px] w-[142px]">
           <Image
@@ -45,7 +45,7 @@ export const ArtistCard = ({
             target="_blank"
             rel="noreferrer noopener"
           >
-            <social.icon className="h-5 w-5" />
+            <social.icon className="h-5 w-5 fill-foreground" />
             <span className="sr-only">Social icon</span>
           </a>
         ))}
