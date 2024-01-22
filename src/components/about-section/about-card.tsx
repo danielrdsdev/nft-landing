@@ -22,11 +22,11 @@ export const AboutCard = ({
   index,
 }: AboutCardProps) => {
   return (
-    <div className="flex items-center gap-32 even:flex-row-reverse">
+    <div className="flex flex-col items-center justify-center gap-20 lg:flex-row lg:justify-start lg:gap-32 lg:even:flex-row-reverse">
       <MotionDiv
         {...fadeScale}
         transition={{ duration: 0.3, type: 'spring', stiffness: 200 }}
-        className="relative h-[517px] w-[535px]"
+        className="relative h-[348px] w-[360px] sm:h-[517px] sm:w-[535px]"
       >
         <Image
           src={aboutImage}
@@ -37,36 +37,40 @@ export const AboutCard = ({
         />
       </MotionDiv>
 
-      <div className="flex max-w-2xl flex-col space-y-8">
-        <div className="space-y-4">
-          <MotionSpan
-            {...fadeLeft}
-            transition={{ duration: 0.3 }}
-            className="block bg-gradient-to-br from-primary to-secondary bg-clip-text text-lg font-bold text-transparent"
-          >
-            0{index}.
-          </MotionSpan>
-          <MotionH3
-            {...fade}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="max-w-sm text-6xl font-bold"
-          >
-            {aboutTitle}
-          </MotionH3>
-          <MotionP
-            {...fade}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="max-w-lg text-lg text-muted"
-          >
-            {aboutDescription}
-          </MotionP>
-          <MotionP
-            {...fade}
-            transition={{ duration: 0.5, delay: 0.6 }}
-            className="max-w-lg text-lg text-muted"
-          >
-            {aboutDescriptionSecondary}
-          </MotionP>
+      <div className="flex flex-col items-center space-y-8 lg:max-w-2xl">
+        <div className="space-y-6">
+          <div className="space-y-2">
+            <MotionSpan
+              {...fadeLeft}
+              transition={{ duration: 0.3 }}
+              className="block bg-gradient-to-br from-primary to-secondary bg-clip-text text-center text-lg font-bold text-transparent lg:text-start"
+            >
+              0{index}.
+            </MotionSpan>
+            <MotionH3
+              {...fade}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-center text-4xl font-bold lg:max-w-sm lg:text-start lg:text-6xl"
+            >
+              {aboutTitle}
+            </MotionH3>
+          </div>
+          <div className="space-y-4">
+            <MotionP
+              {...fade}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="text-center text-lg text-muted lg:max-w-lg lg:text-start"
+            >
+              {aboutDescription}
+            </MotionP>
+            <MotionP
+              {...fade}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="text-center text-lg text-muted lg:max-w-lg lg:text-start"
+            >
+              {aboutDescriptionSecondary}
+            </MotionP>
+          </div>
         </div>
         <MotionDiv {...fadeLeft} transition={{ duration: 0.3, delay: 0.8 }}>
           <Link

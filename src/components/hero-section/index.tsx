@@ -8,7 +8,7 @@ import { LayerImages } from './layer-images'
 
 export const HeroSection = () => {
   return (
-    <section className="relative -mt-20 min-h-[70dvh] w-full pb-48 pt-72">
+    <section className="relative -mt-20 min-h-[70dvh] w-full py-28 lg:pb-48 lg:pt-72">
       <Image
         src="/hero-background-light.png"
         alt="Background hero"
@@ -16,27 +16,31 @@ export const HeroSection = () => {
         sizes="100%"
         className="-z-10 object-cover dark:hidden"
       />
-      <div className="container grid grid-cols-1 gap-4 lg:grid-cols-2">
-        <div className="flex max-w-[585px] flex-col space-y-16">
-          <div className="space-y-2">
+      <div className="container grid grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-4">
+        <div className="flex flex-col space-y-16 lg:max-w-[585px]">
+          <div className="space-y-6">
             <MotionH1
               {...fade}
               transition={{ duration: 0.5 }}
-              className="text-7xl font-bold"
+              className="text-center text-4xl font-bold lg:text-left lg:text-7xl"
             >
               High Quality NFT Collection
             </MotionH1>
             <MotionP
               {...fade}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="max-w-sm text-xl text-muted"
+              className="text-center text-xl text-muted lg:max-w-sm lg:text-left"
             >
               A 890 piece custom Nerkos collection is joining the NFT space on
               Opensea.
             </MotionP>
           </div>
 
-          <MotionDiv {...fadeLeft} transition={{ duration: 0.3, delay: 0.6 }}>
+          <MotionDiv
+            {...fadeLeft}
+            transition={{ duration: 0.3, delay: 0.6 }}
+            className="flex items-center justify-center lg:justify-start"
+          >
             <Button className="w-fit">
               View in OPENSEA
               <ArrowUpRight className="ml-2 h-6 w-6" />
@@ -46,9 +50,9 @@ export const HeroSection = () => {
           <MotionDiv
             {...fade}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="flex items-center gap-4"
+            className="flex items-center justify-center lg:justify-start"
           >
-            <div className="flex items-center">
+            <div className="relative flex items-center">
               <div className="relative h-12 w-12">
                 <Image
                   src="/avatar/avatar-01.png"
@@ -82,7 +86,7 @@ export const HeroSection = () => {
           </MotionDiv>
         </div>
 
-        <div className="relative h-full w-full">
+        <div className="relative h-[30dvh] lg:h-auto">
           <LayerImages />
         </div>
       </div>

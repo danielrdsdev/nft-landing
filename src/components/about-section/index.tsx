@@ -36,7 +36,7 @@ const aboutCards = [
 
 export const AboutSection = () => {
   return (
-    <section id="about" className="container space-y-16 py-32">
+    <section id="about" className="container space-y-16 overflow-hidden py-32">
       <SectionTitle titlePrimary="How it" titleSecondary="works!" />
 
       <div className="space-y-28">

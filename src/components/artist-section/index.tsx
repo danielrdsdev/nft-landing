@@ -97,15 +97,16 @@ const artists = [
 
 export const ArtistSection = () => {
   return (
-    <section className="container space-y-20 py-32">
+    <section className="container space-y-20 overflow-hidden py-32">
       <SectionTitle titlePrimary="Meet" titleSecondary="the artists" />
 
-      <div className="grid grid-cols-1 place-items-center gap-y-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-2 place-items-center gap-y-16 md:grid-cols-3 lg:grid-cols-4">
         {artists.map((artist, i) => (
           <MotionDiv
             {...fade}
             transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
             key={artist.artistName}
+            className="lg:even:-mt-10"
           >
             <ArtistCard {...artist} />
           </MotionDiv>

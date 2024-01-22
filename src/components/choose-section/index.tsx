@@ -38,7 +38,7 @@ const chooses = [
 
 export const ChooseSection = () => {
   return (
-    <section id="choose" className="container py-32">
+    <section id="choose" className="container overflow-hidden py-32">
       <div className="relative flex flex-col items-center justify-center space-y-16">
         <SectionTitle titlePrimary="Why" titleSecondary="choose us?" />
 
@@ -48,6 +48,7 @@ export const ChooseSection = () => {
               {...fade}
               transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
               key={choose.id}
+              className="lg:even:mt-10"
             >
               <ChooseCard {...choose} />
             </MotionDiv>

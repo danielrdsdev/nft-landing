@@ -7,7 +7,7 @@ import { LayerImages } from './layer-images'
 
 export const ContactSection = () => {
   return (
-    <section className="container py-32">
+    <section className="container overflow-hidden py-32">
       <MotionDiv
         {...fadeUp}
         transition={{
@@ -15,7 +15,7 @@ export const ContactSection = () => {
           type: 'spring',
           stiffness: 200,
         }}
-        className="relative rounded-4xl border px-14 py-16"
+        className="relative rounded-4xl border px-8 py-10 lg:px-14 lg:py-16"
       >
         <LayerImages />
 
@@ -27,7 +27,7 @@ export const ContactSection = () => {
             </p>
           </div>
 
-          <form className="mx-auto flex max-w-lg items-center justify-center gap-2">
+          <form className="flex flex-col items-center justify-center gap-4 lg:mx-auto lg:max-w-lg lg:flex-row lg:gap-2">
             <Input placeholder="Enter your email" />
 
             <Button className="w-fit">Subscribe</Button>

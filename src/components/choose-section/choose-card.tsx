@@ -12,7 +12,7 @@ export const ChooseCard = ({
   chooseDescription,
 }: ChooseCardProps) => {
   return (
-    <div className="space-y-8 rounded-2xl border px-8 py-12 lg:even:mt-10">
+    <div className="space-y-8 rounded-2xl border px-8 py-12">
       <Icon />
 
       <h3 className="text-2xl font-bold">{chooseTitle}</h3>

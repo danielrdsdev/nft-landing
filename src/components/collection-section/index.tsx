@@ -34,10 +34,13 @@ const collections = [
 
 export const CollectionSection = () => {
   return (
-    <section id="collection" className="container space-y-16 py-32">
+    <section
+      id="collection"
+      className="container space-y-16 overflow-hidden py-32"
+    >
       <SectionTitle titlePrimary="Nfthub's" titleSecondary="collection" />
 
-      <div className="grid grid-cols-4 gap-12">
+      <div className="grid grid-cols-1 place-items-center gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {collections.map((collection, i) => (
           <MotionDiv
             {...fadeScale}
@@ -48,6 +51,7 @@ export const CollectionSection = () => {
               delay: 0.2 + i * 0.1,
               stiffness: 200,
             }}
+            className="flex w-full flex-col items-center justify-center"
           >
             <CollectionCard {...collection} />
           </MotionDiv>

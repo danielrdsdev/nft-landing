@@ -7,7 +7,7 @@ import { Button } from '../ui/button'
 
 export const CTASection = () => {
   return (
-    <section className="relative flex h-[633px] w-full flex-col items-center justify-center space-y-12">
+    <section className="relative flex h-[633px] w-full flex-col items-center justify-center space-y-12 overflow-hidden">
       <Image
         src="/cta-img.png"
         alt="img"

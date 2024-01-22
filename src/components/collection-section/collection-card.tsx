@@ -13,13 +13,13 @@ export const CollectionCard = ({
 }: CollectionCardProps) => {
   return (
     <>
-      <div className="relative h-[352px] w-[265px]">
+      <div className="relative h-[352px] w-full">
         <Image
           src={collectionImage}
           alt={collectionTitle}
           fill
           sizes="100%"
-          className="object-cover"
+          className="rounded-lg object-cover"
         />
       </div>
       <div className="p-4">

@@ -28,7 +28,7 @@ const datas = [
 
 export const DataSection = () => {
   return (
-    <section className="container py-32">
+    <section className="container overflow-hidden py-32">
       <div className="relative grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {datas.map((data, i) => (
           <MotionDiv

@@ -43,7 +43,7 @@ const qaItems = [
 
 export const QASection = () => {
   return (
-    <section className="container space-y-20 py-32">
+    <section className="container space-y-20 overflow-hidden py-32">
       <SectionTitle
         className="mx-auto max-w-lg"
         titlePrimary="Your questions,"
@@ -58,7 +58,7 @@ export const QASection = () => {
           type: 'spring',
           stiffness: 200,
         }}
-        className="mx-auto max-w-2xl rounded-3xl border p-12"
+        className="mx-auto max-w-2xl rounded-3xl border p-8 lg:p-12"
       >
         <Accordion type="single" collapsible>
           {qaItems.map((item) => (

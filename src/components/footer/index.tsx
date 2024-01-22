@@ -3,9 +3,9 @@ import Link from 'next/link'
 
 export const Footer = () => {
   return (
-    <footer className="border-t pb-8 pt-20">
+    <footer className="overflow-hidden border-t pb-8 pt-20">
       <div className="container flex flex-col space-y-16">
-        <div className="flex justify-between">
+        <div className="flex flex-col gap-12 lg:flex-row lg:justify-between">
           <div className="flex flex-col space-y-6">
             <h4 className="bg-gradient-to-br from-primary to-secondary bg-clip-text font-secondary text-3xl font-extrabold text-transparent">
               NFTHub
@@ -26,7 +26,7 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="flex gap-32">
+          <div className="flex flex-col gap-12 lg:flex-row">
             <div className="flex flex-col space-y-5">
               <h4 className="text-xl font-bold">Quick Link</h4>
               <div className="flex flex-col space-y-4">
@@ -60,7 +60,7 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col items-center gap-2 lg:flex-row lg:justify-between">
           <span className="text-sm text-muted">
             Copyright © 2023 Nfthub All Rights Reserved.
           </span>
