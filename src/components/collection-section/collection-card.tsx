@@ -20,6 +20,7 @@ export const CollectionCard = ({
           fill
           sizes="100%"
           className="rounded-lg object-cover"
+          unoptimized
         />
       </div>
       <div className="p-4">

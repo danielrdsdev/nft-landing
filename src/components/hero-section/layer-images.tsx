@@ -11,7 +11,13 @@ export const LayerImages = () => {
         transition={{ duration: 0.3, type: 'spring', stiffness: 200 }}
         className="absolute left-0 top-0 h-[152px] w-[143px] sm:h-[271px] sm:w-[271px]"
       >
-        <Image src="/layers/art_01.png" alt="Art 01" fill sizes="100%" />
+        <Image
+          src="/layers/art_01.png"
+          alt="Art 01"
+          fill
+          sizes="100%"
+          unoptimized
+        />
       </MotionDiv>
 
       <MotionDiv
@@ -24,7 +30,13 @@ export const LayerImages = () => {
         }}
         className="absolute bottom-0 right-0 h-[152px] w-[143px] sm:h-[271px] sm:w-[271px]"
       >
-        <Image src="/layers/art_03.png" alt="Art 01" fill sizes="100%" />
+        <Image
+          src="/layers/art_03.png"
+          alt="Art 01"
+          fill
+          sizes="100%"
+          unoptimized
+        />
 
         <div className="absolute left-3 top-2 -z-10 h-[152px] w-[143px] -rotate-[10deg] rounded-[48px] border sm:left-8 sm:top-8 sm:h-[240px] sm:w-[240px]" />
       </MotionDiv>

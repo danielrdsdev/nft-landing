@@ -34,6 +34,7 @@ export const AboutCard = ({
           fill
           sizes="100%"
           className="object-contain"
+          unoptimized
         />
       </MotionDiv>
 

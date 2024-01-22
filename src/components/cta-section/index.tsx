@@ -13,6 +13,7 @@ export const CTASection = () => {
         alt="img"
         fill
         className="-z-10 object-cover opacity-25"
+        unoptimized
       />
 
       <div className="space-y-6">

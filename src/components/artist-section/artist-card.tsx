@@ -28,6 +28,7 @@ export const ArtistCard = ({
             fill
             sizes="100%"
             className="object-cover"
+            unoptimized
           />
         </div>
       </div>

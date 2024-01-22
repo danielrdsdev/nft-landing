@@ -17,6 +17,7 @@ export const LayerImages = () => {
             fill
             sizes="100%"
             className="object-contain"
+            unoptimized
           />
         </div>
       </MotionDiv>
@@ -32,6 +33,7 @@ export const LayerImages = () => {
             fill
             sizes="100%"
             className="object-contain"
+            unoptimized
           />
         </div>
       </MotionDiv>

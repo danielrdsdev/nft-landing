@@ -15,6 +15,7 @@ export const HeroSection = () => {
         fill
         sizes="100%"
         className="-z-10 object-cover dark:hidden"
+        unoptimized
       />
       <div className="container grid grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-4">
         <div className="flex flex-col space-y-16 lg:max-w-[585px]">
@@ -59,6 +60,7 @@ export const HeroSection = () => {
                   alt="Avatar 01"
                   fill
                   sizes="100%"
+                  unoptimized
                 />
               </div>
               <div className="relative right-5 h-12 w-12">
@@ -67,6 +69,7 @@ export const HeroSection = () => {
                   alt="Avatar 02"
                   fill
                   sizes="100%"
+                  unoptimized
                 />
               </div>
               <div className="relative right-10 h-12 w-12">
@@ -75,6 +78,7 @@ export const HeroSection = () => {
                   alt="Avatar 03"
                   fill
                   sizes="100%"
+                  unoptimized
                 />
               </div>
             </div>
