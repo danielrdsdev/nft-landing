@@ -1,7 +1,9 @@
 import { Button } from '@/components/ui/button'
+import { fade, fadeLeft } from '@/lib/animations'
 import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
 import { ModeToggle } from '../header/mode-toggle'
+import { MotionDiv, MotionH1, MotionP } from '../providers/motion'
 import { LayerImages } from './layer-images'
 
 export const HeroSection = () => {
@@ -17,19 +19,35 @@ export const HeroSection = () => {
       <div className="container grid grid-cols-1 gap-4 lg:grid-cols-2">
         <div className="flex max-w-[585px] flex-col space-y-16">
           <div className="space-y-2">
-            <h1 className="text-7xl font-bold">High Quality NFT Collection</h1>
-            <p className="max-w-sm text-xl text-muted">
+            <MotionH1
+              {...fade}
+              transition={{ duration: 0.5 }}
+              className="text-7xl font-bold"
+            >
+              High Quality NFT Collection
+            </MotionH1>
+            <MotionP
+              {...fade}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="max-w-sm text-xl text-muted"
+            >
               A 890 piece custom Nerkos collection is joining the NFT space on
               Opensea.
-            </p>
+            </MotionP>
           </div>
 
-          <Button className="w-fit">
-            View in OPENSEA
-            <ArrowUpRight className="ml-2 h-6 w-6" />
-          </Button>
+          <MotionDiv {...fadeLeft} transition={{ duration: 0.3, delay: 0.6 }}>
+            <Button className="w-fit">
+              View in OPENSEA
+              <ArrowUpRight className="ml-2 h-6 w-6" />
+            </Button>
+          </MotionDiv>
 
-          <div className="flex items-center gap-4">
+          <MotionDiv
+            {...fade}
+            transition={{ duration: 0.5, delay: 0.8 }}
+            className="flex items-center gap-4"
+          >
             <div className="flex items-center">
               <div className="relative h-12 w-12">
                 <Image
@@ -61,7 +79,7 @@ export const HeroSection = () => {
               <h2 className="text-2xl font-bold">47k+</h2>
               <p className="text-xs text-muted">Community members</p>
             </div>
-          </div>
+          </MotionDiv>
         </div>
 
         <div className="relative h-full w-full">

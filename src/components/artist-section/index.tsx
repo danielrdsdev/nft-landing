@@ -1,5 +1,7 @@
 import { Icons } from '@/components/icons'
 import { SectionTitle } from '@/components/section-title'
+import { fade } from '@/lib/animations'
+import { MotionDiv } from '../providers/motion'
 import { ArtistCard } from './artist-card'
 
 const artists = [
@@ -99,8 +101,14 @@ export const ArtistSection = () => {
       <SectionTitle titlePrimary="Meet" titleSecondary="the artists" />
 
       <div className="grid grid-cols-1 place-items-center gap-y-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {artists.map((artist) => (
-          <ArtistCard key={artist.artistName} {...artist} />
+        {artists.map((artist, i) => (
+          <MotionDiv
+            {...fade}
+            transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
+            key={artist.artistName}
+          >
+            <ArtistCard {...artist} />
+          </MotionDiv>
         ))}
       </div>
     </section>

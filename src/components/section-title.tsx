@@ -1,7 +1,8 @@
+import { fade } from '@/lib/animations'
 import { cn } from '@/lib/utils'
-import { ComponentProps } from 'react'
+import { MotionH3 } from './providers/motion'
 
-type SectionTitleProps = ComponentProps<'h3'> & {
+type SectionTitleProps = {
   titlePrimary: string
   titleSecondary: string
   className?: string
@@ -10,14 +11,17 @@ export const SectionTitle = ({
   titlePrimary,
   titleSecondary,
   className,
-  ...props
 }: SectionTitleProps) => {
   return (
-    <h3 {...props} className={cn('text-center text-6xl font-bold', className)}>
+    <MotionH3
+      {...fade}
+      transition={{ duration: 0.5, delay: 0.2 }}
+      className={cn('text-center text-6xl font-bold', className)}
+    >
       {titlePrimary}{' '}
       <span className="bg-gradient-to-br from-primary to-secondary bg-clip-text text-transparent">
         {titleSecondary}
       </span>
-    </h3>
+    </MotionH3>
   )
 }

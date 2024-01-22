@@ -1,5 +1,7 @@
+import { fade, fadeLeft } from '@/lib/animations'
 import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
+import { MotionDiv, MotionP } from '../providers/motion'
 import { SectionTitle } from '../section-title'
 import { Button } from '../ui/button'
 
@@ -20,15 +22,21 @@ export const CTASection = () => {
           titleSecondary="minting"
         />
 
-        <p className="text-center text-xl text-muted">
+        <MotionP
+          {...fade}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="text-center text-xl text-muted"
+        >
           Invest and manage all your NFTs at one place.
-        </p>
+        </MotionP>
       </div>
 
-      <Button>
-        Get started
-        <ArrowUpRight className="ml-2 h-6 w-6" />
-      </Button>
+      <MotionDiv {...fadeLeft} transition={{ duration: 0.3, delay: 0.6 }}>
+        <Button>
+          Get started
+          <ArrowUpRight className="ml-2 h-6 w-6" />
+        </Button>
+      </MotionDiv>
     </section>
   )
 }

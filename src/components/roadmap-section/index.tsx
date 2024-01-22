@@ -1,4 +1,6 @@
 import { SectionTitle } from '@/components/section-title'
+import { fadeScale } from '@/lib/animations'
+import { MotionDiv } from '../providers/motion'
 import { RoadmapCard } from './roadmap-card'
 
 const roadmapCards = [
@@ -137,7 +139,13 @@ export const RoadmapSection = () => {
 
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
         {roadmapCards.map((card, i) => (
-          <RoadmapCard key={card.id} {...card} index={i + 1} />
+          <MotionDiv
+            {...fadeScale}
+            transition={{ duration: 0.3, delay: 0.2 + i * 0.1 }}
+            key={card.id}
+          >
+            <RoadmapCard {...card} index={i + 1} />
+          </MotionDiv>
         ))}
       </div>
     </section>

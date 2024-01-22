@@ -1,6 +1,8 @@
 import { SectionTitle } from '@/components/section-title'
 import { Button } from '@/components/ui/button'
+import { fade, fadeScale } from '@/lib/animations'
 import { ArrowUpRight } from 'lucide-react'
+import { MotionDiv } from '../providers/motion'
 import { CollectionCard } from './collection-card'
 
 const collections = [
@@ -36,17 +38,32 @@ export const CollectionSection = () => {
       <SectionTitle titlePrimary="Nfthub's" titleSecondary="collection" />
 
       <div className="grid grid-cols-4 gap-12">
-        {collections.map((collection) => (
-          <CollectionCard key={collection.id} {...collection} />
+        {collections.map((collection, i) => (
+          <MotionDiv
+            {...fadeScale}
+            key={collection.id}
+            transition={{
+              duration: 0.3,
+              type: 'spring',
+              delay: 0.2 + i * 0.1,
+              stiffness: 200,
+            }}
+          >
+            <CollectionCard {...collection} />
+          </MotionDiv>
         ))}
       </div>
 
-      <div className="flex items-center justify-center">
+      <MotionDiv
+        {...fade}
+        transition={{ duration: 0.5, delay: 0.6 }}
+        className="flex items-center justify-center"
+      >
         <Button className="w-fit">
           View collection
           <ArrowUpRight className="ml-2 h-6 w-6" />
         </Button>
-      </div>
+      </MotionDiv>
     </section>
   )
 }

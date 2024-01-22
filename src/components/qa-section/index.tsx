@@ -5,6 +5,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
+import { fadeUp } from '@/lib/animations'
+import { MotionDiv } from '../providers/motion'
 
 const qaItems = [
   {
@@ -48,7 +50,16 @@ export const QASection = () => {
         titleSecondary="answered!"
       />
 
-      <div className="mx-auto max-w-2xl rounded-3xl border p-12">
+      <MotionDiv
+        {...fadeUp}
+        transition={{
+          duration: 0.3,
+          delay: 0.3,
+          type: 'spring',
+          stiffness: 200,
+        }}
+        className="mx-auto max-w-2xl rounded-3xl border p-12"
+      >
         <Accordion type="single" collapsible>
           {qaItems.map((item) => (
             <AccordionItem key={item.title} value={item.title}>
@@ -59,7 +70,7 @@ export const QASection = () => {
             </AccordionItem>
           ))}
         </Accordion>
-      </div>
+      </MotionDiv>
     </section>
   )
 }

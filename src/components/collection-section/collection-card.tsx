@@ -12,7 +12,7 @@ export const CollectionCard = ({
   collectionDescription,
 }: CollectionCardProps) => {
   return (
-    <div>
+    <>
       <div className="relative h-[352px] w-[265px]">
         <Image
           src={collectionImage}
@@ -28,6 +28,6 @@ export const CollectionCard = ({
           {collectionDescription}
         </p>
       </div>
-    </div>
+    </>
   )
 }

@@ -1,5 +1,7 @@
 import { Icons } from '@/components/icons'
 import { SectionTitle } from '@/components/section-title'
+import { fade } from '@/lib/animations'
+import { MotionDiv } from '../providers/motion'
 import { ChooseCard } from './choose-card'
 import { LayerImages } from './layer-images'
 
@@ -41,8 +43,14 @@ export const ChooseSection = () => {
         <SectionTitle titlePrimary="Why" titleSecondary="choose us?" />
 
         <div className="grid grid-cols-1 items-start gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {chooses.map((choose) => (
-            <ChooseCard key={choose.id} {...choose} />
+          {chooses.map((choose, i) => (
+            <MotionDiv
+              {...fade}
+              transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
+              key={choose.id}
+            >
+              <ChooseCard {...choose} />
+            </MotionDiv>
           ))}
         </div>
 

@@ -1,7 +1,7 @@
 import { BackToTop } from '@/components/back-to-top'
 import { Footer } from '@/components/footer'
 import { Header } from '@/components/header'
-import { ThemeProvider } from '@/components/theme-provider'
+import { ThemeProvider } from '@/components/providers/theme-provider'
 import { inter, orbitron } from '@/lib/fonts'
 import type { Metadata } from 'next'
 import './globals.css'
@@ -23,7 +23,7 @@ export default function RootLayout({
           <div className="flex min-h-full flex-col">
             <Header />
 
-            <main className="flex-1">{children}</main>
+            <main className="flex-1 overflow-hidden">{children}</main>
 
             <Footer />
           </div>
