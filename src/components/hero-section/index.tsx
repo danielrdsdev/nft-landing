@@ -6,7 +6,7 @@ import { LayerImages } from './layer-images'
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-[70dvh] w-full py-52">
+    <section className="relative -mt-20 min-h-[70dvh] w-full pb-48 pt-72">
       <Image
         src="/hero-background-light.png"
         alt="Background hero"

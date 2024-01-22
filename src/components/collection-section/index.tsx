@@ -32,7 +32,7 @@ const collections = [
 
 export const CollectionSection = () => {
   return (
-    <section className="container space-y-16">
+    <section id="collection" className="container space-y-16 py-32">
       <SectionTitle titlePrimary="Nfthub's" titleSecondary="collection" />
 
       <div className="grid grid-cols-4 gap-12">

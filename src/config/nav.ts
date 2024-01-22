@@ -2,28 +2,20 @@ import { Icons } from '@/components/icons'
 
 export const MAIN_LINKS = [
   {
-    label: 'Home',
-    href: '/',
-  },
-  {
     label: 'Collection',
-    href: '/collection',
+    href: 'collection',
   },
   {
     label: 'Choose',
-    href: '/choose',
+    href: 'choose',
   },
   {
     label: 'About',
-    href: '/about',
+    href: 'about',
   },
   {
     label: 'Roadmap',
-    href: '/roadmap',
-  },
-  {
-    label: 'Blog',
-    href: '/blog',
+    href: 'roadmap',
   },
 ]
 

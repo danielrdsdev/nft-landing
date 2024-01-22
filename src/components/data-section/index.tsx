@@ -26,12 +26,13 @@ const datas = [
 
 export const DataSection = () => {
   return (
-    <section className="container relative grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-      {datas.map((data) => (
-        <DataCard key={data.id} {...data} />
-      ))}
-
-      <LayerImages />
+    <section className="container py-32">
+      <div className="relative grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {datas.map((data) => (
+          <DataCard key={data.id} {...data} />
+        ))}
+        <LayerImages />
+      </div>
     </section>
   )
 }

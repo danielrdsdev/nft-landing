@@ -132,7 +132,7 @@ const roadmapCards = [
 
 export const RoadmapSection = () => {
   return (
-    <section className="container space-y-20">
+    <section id="roadmap" className="container space-y-20 py-32">
       <SectionTitle titlePrimary="Nfthub's" titleSecondary="Roadmap" />
 
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">

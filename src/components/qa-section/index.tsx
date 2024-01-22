@@ -41,7 +41,7 @@ const qaItems = [
 
 export const QASection = () => {
   return (
-    <section className="container space-y-20">
+    <section className="container space-y-20 py-32">
       <SectionTitle
         className="mx-auto max-w-lg"
         titlePrimary="Your questions,"

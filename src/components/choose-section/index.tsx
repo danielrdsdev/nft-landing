@@ -36,16 +36,18 @@ const chooses = [
 
 export const ChooseSection = () => {
   return (
-    <section className="container relative space-y-16">
-      <SectionTitle titlePrimary="Why" titleSecondary="choose us?" />
+    <section id="choose" className="container py-32">
+      <div className="relative flex flex-col items-center justify-center space-y-16">
+        <SectionTitle titlePrimary="Why" titleSecondary="choose us?" />
 
-      <div className="grid grid-cols-1 items-start gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {chooses.map((choose) => (
-          <ChooseCard key={choose.id} {...choose} />
-        ))}
+        <div className="grid grid-cols-1 items-start gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {chooses.map((choose) => (
+            <ChooseCard key={choose.id} {...choose} />
+          ))}
+        </div>
+
+        <LayerImages />
       </div>
-
-      <LayerImages />
     </section>
   )
 }

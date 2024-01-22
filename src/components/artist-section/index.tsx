@@ -95,7 +95,7 @@ const artists = [
 
 export const ArtistSection = () => {
   return (
-    <section className="container space-y-20">
+    <section className="container space-y-20 py-32">
       <SectionTitle titlePrimary="Meet" titleSecondary="the artists" />
 
       <div className="grid grid-cols-1 place-items-center gap-y-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
