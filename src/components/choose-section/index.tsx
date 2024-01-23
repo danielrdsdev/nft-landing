@@ -38,7 +38,7 @@ const chooses = [
 
 export const ChooseSection = () => {
   return (
-    <section id="choose" className="container overflow-hidden py-32">
+    <section id="choose" className="container py-32">
       <div className="relative flex flex-col items-center justify-center space-y-16">
         <SectionTitle titlePrimary="Why" titleSecondary="choose us?" />
 
