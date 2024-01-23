@@ -13,7 +13,7 @@ export const Header = () => {
 
       <nav className="hidden items-center gap-8 lg:flex">
         {MAIN_LINKS.map((link) => (
-          <NavLink key={link.href} href={link.href}>
+          <NavLink key={link.sectionId} sectionId={link.sectionId}>
             {link.label}
           </NavLink>
         ))}
@@ -24,7 +24,7 @@ export const Header = () => {
           <>
             {link.desktop === true && (
               <a
-                key={link.href}
+                key={link.id}
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"

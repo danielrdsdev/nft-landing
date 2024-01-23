@@ -17,6 +17,7 @@ export const LayerImages = () => {
           fill
           sizes="100%"
           unoptimized
+          priority
         />
       </MotionDiv>
 
@@ -36,6 +37,7 @@ export const LayerImages = () => {
           fill
           sizes="100%"
           unoptimized
+          priority
         />
 
         <div className="absolute left-3 top-2 -z-10 h-[152px] w-[143px] -rotate-[10deg] rounded-[48px] border sm:left-8 sm:top-8 sm:h-[240px] sm:w-[240px]" />

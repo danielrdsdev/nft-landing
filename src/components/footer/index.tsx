@@ -1,5 +1,47 @@
 import { SOCIAL_LINKS } from '@/config/nav'
 import Link from 'next/link'
+import { FooterNav } from './footer-nav'
+
+const footerNav = [
+  {
+    navTitle: 'Quick Link',
+    navLinks: [
+      {
+        label: 'About',
+        href: '#',
+      },
+      {
+        label: 'Collection',
+        href: '#',
+      },
+      {
+        label: 'Roadmap',
+        href: '#',
+      },
+      {
+        label: 'FAQs',
+        href: '#',
+      },
+    ],
+  },
+  {
+    navTitle: 'Community',
+    navLinks: [
+      {
+        label: 'How it works!',
+        href: '#',
+      },
+      {
+        label: 'Blockchain',
+        href: '#',
+      },
+      {
+        label: 'Get in touch',
+        href: '#',
+      },
+    ],
+  },
+]
 
 export const Footer = () => {
   return (
@@ -18,7 +60,7 @@ export const Footer = () => {
 
             <div className="flex items-center gap-4">
               {SOCIAL_LINKS.map((link) => (
-                <a key={link.href} href={link.href}>
+                <a key={link.id} href={link.href}>
                   <link.icon className="h-6 w-6 fill-foreground" />
                   <span className="sr-only">Social icon</span>
                 </a>
@@ -27,48 +69,21 @@ export const Footer = () => {
           </div>
 
           <div className="flex flex-col gap-12 lg:flex-row">
-            <div className="flex flex-col space-y-5">
-              <h4 className="text-xl font-bold">Quick Link</h4>
-              <div className="flex flex-col space-y-4">
-                <Link href="/" className="text-lg text-muted">
-                  About
-                </Link>
-                <Link href="/" className="text-lg text-muted">
-                  Collection
-                </Link>
-                <Link href="/" className="text-lg text-muted">
-                  Roadmap
-                </Link>
-                <Link href="/" className="text-lg text-muted">
-                  FAQs
-                </Link>
-              </div>
-            </div>
-            <div className="flex flex-col space-y-5">
-              <h4 className="text-xl font-bold">Community</h4>
-              <div className="flex flex-col space-y-4">
-                <Link href="/" className="text-lg text-muted">
-                  How it works!
-                </Link>
-                <Link href="/" className="text-lg text-muted">
-                  Blockchain
-                </Link>
-                <Link href="/" className="text-lg text-muted">
-                  Get in touch
-                </Link>
-              </div>
-            </div>
+            {footerNav.map((nav) => (
+              <FooterNav key={nav.navTitle} {...nav} />
+            ))}
           </div>
         </div>
+
         <div className="flex flex-col items-center gap-2 lg:flex-row lg:justify-between">
           <span className="text-sm text-muted">
             Copyright © 2023 Nfthub All Rights Reserved.
           </span>
           <div className="flex items-center gap-4">
-            <Link href="/" className="text-sm text-muted">
+            <Link href="#" className="text-sm text-muted">
               Privacy policy
             </Link>
-            <Link href="/" className="text-sm text-muted">
+            <Link href="#" className="text-sm text-muted">
               Terms of Use
             </Link>
           </div>

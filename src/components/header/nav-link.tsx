@@ -1,12 +1,13 @@
 'use client'
 
+import { cn } from '@/lib/utils'
 import { ComponentProps } from 'react'
 
 type NavLinkProps = ComponentProps<'button'> & {
-  href: string
+  sectionId: string
 }
 
-export const NavLink = ({ href, ...props }: NavLinkProps) => {
+export const NavLink = ({ sectionId, ...props }: NavLinkProps) => {
   const scrollToSection = (sectionId: string) => {
     const sectionElement = document.getElementById(sectionId)
 
@@ -18,8 +19,8 @@ export const NavLink = ({ href, ...props }: NavLinkProps) => {
   return (
     <button
       {...props}
-      onClick={() => scrollToSection(href)}
-      className="text-lg font-bold"
+      onClick={() => scrollToSection(sectionId)}
+      className={cn('text-lg font-bold', props.className)}
     />
   )
 }

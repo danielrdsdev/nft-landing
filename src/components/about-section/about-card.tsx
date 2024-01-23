@@ -38,7 +38,7 @@ export const AboutCard = ({
         />
       </MotionDiv>
 
-      <div className="flex flex-col items-center space-y-8 lg:max-w-2xl">
+      <div className="flex flex-col space-y-8 lg:max-w-2xl">
         <div className="space-y-6">
           <div className="space-y-2">
             <MotionSpan
@@ -73,10 +73,14 @@ export const AboutCard = ({
             </MotionP>
           </div>
         </div>
-        <MotionDiv {...fadeLeft} transition={{ duration: 0.3, delay: 0.8 }}>
+        <MotionDiv
+          {...fadeLeft}
+          transition={{ duration: 0.3, delay: 0.8 }}
+          className="flex items-center justify-center lg:justify-start"
+        >
           <Link
             href={aboutLink}
-            className="flex w-fit items-center border-b py-1 text-lg font-bold"
+            className="flex items-center border-b py-1 text-lg font-bold"
           >
             Learn more
             <ArrowUpRight className="ml-2 h-6 w-6" />

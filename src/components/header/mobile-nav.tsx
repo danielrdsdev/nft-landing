@@ -8,7 +8,7 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet'
 import { MAIN_LINKS, SOCIAL_LINKS } from '@/config/nav'
-import Link from 'next/link'
+import { NavLink } from './nav-link'
 
 export const MobileNav = () => {
   return (
@@ -25,13 +25,13 @@ export const MobileNav = () => {
         </SheetHeader>
         <nav className="divide-border/10 border-border/10 flex flex-col divide-y border-y">
           {MAIN_LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="px-6 py-3 font-bold"
+            <NavLink
+              key={link.label}
+              sectionId={link.sectionId}
+              className="px-6 py-3 text-left"
             >
               {link.label}
-            </Link>
+            </NavLink>
           ))}
         </nav>
 
@@ -39,7 +39,7 @@ export const MobileNav = () => {
           {SOCIAL_LINKS.map((link) => (
             <>
               {link.mobile === true && (
-                <Button key={link.href} variant="icon" asChild>
+                <Button key={link.id} variant="icon" asChild>
                   <a href={link.href} target="_blank" rel="noopener noreferrer">
                     <link.icon className="h-6 w-6 fill-foreground" />
                     <span className="sr-only">Social icon</span>

@@ -41,7 +41,7 @@ export const ArtistCard = ({
       <div className="flex items-center gap-4">
         {socials.map((social) => (
           <a
-            key={social.link}
+            key={social.name}
             href={social.link}
             target="_blank"
             rel="noreferrer noopener"

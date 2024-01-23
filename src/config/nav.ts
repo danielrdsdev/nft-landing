@@ -3,56 +3,62 @@ import { Icons } from '@/components/icons'
 export const MAIN_LINKS = [
   {
     label: 'Collection',
-    href: 'collection',
+    sectionId: 'collection',
   },
   {
     label: 'Choose',
-    href: 'choose',
+    sectionId: 'choose',
   },
   {
     label: 'About',
-    href: 'about',
+    sectionId: 'about',
   },
   {
     label: 'Roadmap',
-    href: 'roadmap',
+    sectionId: 'roadmap',
   },
 ]
 
 export const SOCIAL_LINKS = [
   {
+    id: 1,
     icon: Icons.facebook,
-    href: 'https://twitter.com/0xNFT',
+    href: '#',
     mobile: true,
     desktop: false,
   },
   {
+    id: 2,
     icon: Icons.twitter,
-    href: 'https://twitter.com/0xNFT3',
+    href: '#',
     mobile: true,
     desktop: true,
   },
   {
+    id: 3,
     icon: Icons.instagram,
-    href: 'https://medium.com/0xNFT4',
+    href: '#',
     mobile: true,
     desktop: true,
   },
   {
+    id: 4,
     icon: Icons.discord,
-    href: 'https://discord.gg/0xNFT5',
+    href: '#',
     mobile: true,
     desktop: true,
   },
   {
+    id: 5,
     icon: Icons.inbox,
-    href: 'https://discord.gg/0xNFT6',
+    href: '#',
     mobile: true,
     desktop: false,
   },
   {
+    id: 6,
     icon: Icons.card,
-    href: 'https://instagram.com/0xNFT7',
+    href: '#',
     mobile: false,
     desktop: true,
   },
