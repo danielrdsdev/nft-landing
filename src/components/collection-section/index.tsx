@@ -1,6 +1,13 @@
 import { SectionTitle } from '@/components/section-title'
 import { Button } from '@/components/ui/button'
-import { fade, fadeScale } from '@/lib/animations'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel'
+import { fade } from '@/lib/animations'
 import { ArrowUpRight } from 'lucide-react'
 import { MotionDiv } from '../providers/motion'
 import { CollectionCard } from './collection-card'
@@ -30,6 +37,30 @@ const collections = [
     collectionTitle: '#Toxic Poeth',
     collectionDescription: 'By YazoiLup',
   },
+  {
+    id: 5,
+    collectionImage: '/card/card-01.png',
+    collectionTitle: '#Alec Art',
+    collectionDescription: 'By GeorgZvic',
+  },
+  {
+    id: 6,
+    collectionImage: '/card/card-02.png',
+    collectionTitle: '#Toxic Poeth',
+    collectionDescription: 'By YazoiLup',
+  },
+  {
+    id: 7,
+    collectionImage: '/card/card-03.png',
+    collectionTitle: '#Toxic Poeth',
+    collectionDescription: 'By YazoiLup',
+  },
+  {
+    id: 8,
+    collectionImage: '/card/card-04.png',
+    collectionTitle: '#Toxic Poeth',
+    collectionDescription: 'By YazoiLup',
+  },
 ]
 
 export const CollectionSection = () => {
@@ -40,23 +71,35 @@ export const CollectionSection = () => {
     >
       <SectionTitle titlePrimary="Nfthub's" titleSecondary="collection" />
 
-      <div className="grid grid-cols-1 place-items-center gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {collections.map((collection, i) => (
-          <MotionDiv
-            {...fadeScale}
-            key={collection.id}
-            transition={{
-              duration: 0.3,
-              type: 'spring',
-              delay: 0.2 + i * 0.1,
-              stiffness: 200,
-            }}
-            className="flex w-full flex-col items-center justify-center"
-          >
-            <CollectionCard {...collection} />
-          </MotionDiv>
-        ))}
-      </div>
+      <Carousel
+        opts={{
+          align: 'start',
+          dragFree: true,
+          skipSnaps: false,
+        }}
+      >
+        <CarouselContent>
+          {collections.map((collection, i) => (
+            <CarouselItem
+              key={collection.id}
+              className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
+            >
+              <MotionDiv
+                {...fade}
+                transition={{
+                  duration: 0.5,
+                  delay: 0.2 + i * 0.1,
+                }}
+                className="flex w-full flex-col items-center justify-center"
+              >
+                <CollectionCard {...collection} />
+              </MotionDiv>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel>
 
       <MotionDiv
         {...fade}

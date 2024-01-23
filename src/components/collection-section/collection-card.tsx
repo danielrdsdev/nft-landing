@@ -19,7 +19,7 @@ export const CollectionCard = ({
           alt={collectionTitle}
           fill
           sizes="100%"
-          className="rounded-lg object-cover"
+          className="rounded-xl object-cover"
           unoptimized
         />
       </div>
