@@ -1,7 +1,7 @@
 import { Icons } from '@/components/icons'
+import { MotionDiv } from '@/components/providers/motion'
 import { SectionTitle } from '@/components/section-title'
 import { fade } from '@/lib/animations'
-import { MotionDiv } from '../providers/motion'
 import { ChooseCard } from './choose-card'
 import { LayerImages } from './layer-images'
 

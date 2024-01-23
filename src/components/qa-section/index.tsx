@@ -1,3 +1,4 @@
+import { MotionDiv } from '@/components/providers/motion'
 import { SectionTitle } from '@/components/section-title'
 import {
   Accordion,
@@ -6,7 +7,6 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion'
 import { fadeUp } from '@/lib/animations'
-import { MotionDiv } from '../providers/motion'
 
 const qaItems = [
   {

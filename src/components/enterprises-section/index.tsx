@@ -1,6 +1,6 @@
 import { Icons } from '@/components/icons'
+import { MotionDiv } from '@/components/providers/motion'
 import { fade } from '@/lib/animations'
-import { MotionDiv } from '../providers/motion'
 
 export const EnterprisesSection = () => {
   return (

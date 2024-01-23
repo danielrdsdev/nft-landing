@@ -1,8 +1,13 @@
+import {
+  MotionDiv,
+  MotionH3,
+  MotionP,
+  MotionSpan,
+} from '@/components/providers/motion'
 import { fade, fadeLeft, fadeScale } from '@/lib/animations'
 import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { MotionDiv, MotionH3, MotionP, MotionSpan } from '../providers/motion'
 
 type AboutCardProps = {
   aboutImage: string

@@ -1,7 +1,7 @@
+import { Icons } from '@/components/icons'
+import { MotionDiv } from '@/components/providers/motion'
 import { fade, fadeScale } from '@/lib/animations'
 import Image from 'next/image'
-import { Icons } from '../icons'
-import { MotionDiv } from '../providers/motion'
 
 export const LayerImages = () => {
   return (

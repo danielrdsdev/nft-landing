@@ -1,6 +1,6 @@
+import { MotionDiv } from '@/components/providers/motion'
 import { fade } from '@/lib/animations'
 import Image from 'next/image'
-import { MotionDiv } from '../providers/motion'
 
 export const LayerImages = () => {
   return (

@@ -1,8 +1,8 @@
+import { MotionDiv } from '@/components/providers/motion'
 import { SectionTitle } from '@/components/section-title'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { fadeUp } from '@/lib/animations'
-import { MotionDiv } from '../providers/motion'
 import { LayerImages } from './layer-images'
 
 export const ContactSection = () => {

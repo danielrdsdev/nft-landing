@@ -1,3 +1,4 @@
+import { MotionDiv } from '@/components/providers/motion'
 import { SectionTitle } from '@/components/section-title'
 import { Button } from '@/components/ui/button'
 import {
@@ -9,7 +10,6 @@ import {
 } from '@/components/ui/carousel'
 import { fade } from '@/lib/animations'
 import { ArrowUpRight } from 'lucide-react'
-import { MotionDiv } from '../providers/motion'
 import { CollectionCard } from './collection-card'
 
 const collections = [

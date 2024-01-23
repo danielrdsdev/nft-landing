@@ -1,9 +1,9 @@
+import { MotionDiv, MotionP } from '@/components/providers/motion'
+import { SectionTitle } from '@/components/section-title'
+import { Button } from '@/components/ui/button'
 import { fade, fadeLeft } from '@/lib/animations'
 import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
-import { MotionDiv, MotionP } from '../providers/motion'
-import { SectionTitle } from '../section-title'
-import { Button } from '../ui/button'
 
 export const CTASection = () => {
   return (

@@ -1,5 +1,5 @@
+import { MotionDiv } from '@/components/providers/motion'
 import { fadeScale } from '@/lib/animations'
-import { MotionDiv } from '../providers/motion'
 import { DataCard } from './data-card'
 import { LayerImages } from './layer-images'
 

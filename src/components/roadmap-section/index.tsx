@@ -1,6 +1,6 @@
+import { MotionDiv } from '@/components/providers/motion'
 import { SectionTitle } from '@/components/section-title'
 import { fadeScale } from '@/lib/animations'
-import { MotionDiv } from '../providers/motion'
 import { RoadmapCard } from './roadmap-card'
 
 const roadmapCards = [
