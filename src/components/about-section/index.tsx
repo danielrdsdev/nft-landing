@@ -10,7 +10,7 @@ const aboutCards = [
       'Use Trust Wallet, Metamask or any wallet to connect to multiple chains the app.',
     aboutDescriptionSecondary:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit Metamask or any wallet ipsam temporibus.',
-    aboutLink: '/about1',
+    aboutLink: '#',
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const aboutCards = [
       'Quality comes first. we took our time to plan out everything and build our production pipeline for a good quality artworks & digital artwork.',
     aboutDescriptionSecondary:
       'Starting the production on the procedurally generated planets and the smart contract for minting.',
-    aboutLink: '/about2',
+    aboutLink: '#',
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const aboutCards = [
       'Earn ETH and BIT for all your NFTs that you sell on our marketplace.',
     aboutDescriptionSecondary:
       'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae doloremque a officiis quasi autem!',
-    aboutLink: '/about3',
+    aboutLink: '#',
   },
 ]
 
