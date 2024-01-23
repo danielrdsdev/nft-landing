@@ -12,17 +12,17 @@ const artists = [
     socials: [
       {
         name: 'twitter',
-        link: 'https://twitter.com',
+        link: '#',
         icon: Icons.twitter,
       },
       {
         name: 'instagram',
-        link: 'https://instagram.com',
+        link: '#',
         icon: Icons.discord,
       },
       {
         name: 'discord',
-        link: 'https://discord.com',
+        link: '#',
         icon: Icons.instagram,
       },
     ],
@@ -34,17 +34,17 @@ const artists = [
     socials: [
       {
         name: 'twitter',
-        link: 'https://twitter.com',
+        link: '#',
         icon: Icons.twitter,
       },
       {
         name: 'instagram',
-        link: 'https://instagram.com',
+        link: '#',
         icon: Icons.discord,
       },
       {
         name: 'discord',
-        link: 'https://discord.com',
+        link: '#',
         icon: Icons.instagram,
       },
     ],
@@ -56,17 +56,17 @@ const artists = [
     socials: [
       {
         name: 'twitter',
-        link: 'https://twitter.com',
+        link: '#',
         icon: Icons.twitter,
       },
       {
         name: 'instagram',
-        link: 'https://instagram.com',
+        link: '#',
         icon: Icons.discord,
       },
       {
         name: 'discord',
-        link: 'https://discord.com',
+        link: '#',
         icon: Icons.instagram,
       },
     ],
@@ -78,17 +78,17 @@ const artists = [
     socials: [
       {
         name: 'twitter',
-        link: 'https://twitter.com',
+        link: '#',
         icon: Icons.twitter,
       },
       {
         name: 'instagram',
-        link: 'https://instagram.com',
+        link: '#',
         icon: Icons.discord,
       },
       {
         name: 'discord',
-        link: 'https://discord.com',
+        link: '#',
         icon: Icons.instagram,
       },
     ],
