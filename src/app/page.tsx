@@ -12,47 +12,47 @@ import { QASection } from '@/components/qa-section'
 import { RoadmapSection } from '@/components/roadmap-section'
 
 export default function Home() {
-  return (
-    <>
-      <HeroSection />
+	return (
+		<>
+			<HeroSection />
 
-      <EnterprisesSection />
+			<EnterprisesSection />
 
-      <Divider />
+			<Divider />
 
-      <CollectionSection />
+			<CollectionSection />
 
-      <Divider />
+			<Divider />
 
-      <ChooseSection />
+			<ChooseSection />
 
-      <Divider />
+			<Divider />
 
-      <DataSection />
+			<DataSection />
 
-      <Divider />
+			<Divider />
 
-      <AboutSection />
+			<AboutSection />
 
-      <Divider />
+			<Divider />
 
-      <ContactSection />
+			<ContactSection />
 
-      <Divider />
+			<Divider />
 
-      <RoadmapSection />
+			<RoadmapSection />
 
-      <Divider />
+			<Divider />
 
-      <ArtistSection />
+			<ArtistSection />
 
-      <Divider />
+			<Divider />
 
-      <QASection />
+			<QASection />
 
-      <Divider />
+			<Divider />
 
-      <CTASection />
-    </>
-  )
+			<CTASection />
+		</>
+	)
 }

@@ -7,30 +7,30 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'NFT - Landing Page',
-  description: 'A landing page presenting some NFTs',
+	title: 'NFT - Landing Page',
+	description: 'A landing page presenting some NFTs',
 }
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode
+	children: React.ReactNode
 }>) {
-  return (
-    <html lang="pt-br" suppressHydrationWarning>
-      <body className={`${inter.variable} ${orbitron.variable}`}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <div className="flex min-h-full flex-col">
-            <Header />
+	return (
+		<html lang="pt-BR" suppressHydrationWarning>
+			<body className={`${inter.variable} ${orbitron.variable}`}>
+				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+					<div className="flex min-h-full flex-col">
+						<Header />
 
-            <main className="flex-1 overflow-hidden">{children}</main>
+						<main className="flex-1 overflow-hidden">{children}</main>
 
-            <Footer />
-          </div>
+						<Footer />
+					</div>
 
-          <BackToTop />
-        </ThemeProvider>
-      </body>
-    </html>
-  )
+					<BackToTop />
+				</ThemeProvider>
+			</body>
+		</html>
+	)
 }
