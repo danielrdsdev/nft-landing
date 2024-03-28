@@ -25,7 +25,7 @@ export const HeroSection = () => {
 							transition={{ duration: 0.5 }}
 							className="text-center text-4xl font-bold lg:text-left lg:text-7xl"
 						>
-							High Quality NFT Collection
+							testando asuduhashdasudh
 						</MotionH1>
 						<MotionP
 							{...fade}
