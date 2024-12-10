@@ -1,4 +1,5 @@
 import { MAIN_LINKS, SOCIAL_LINKS } from '@/config/nav'
+import React from 'react'
 import { MobileNav } from './mobile-nav'
 import { NavLink } from './nav-link'
 
@@ -21,7 +22,7 @@ export const Header = () => {
 
 			<div className="hidden items-center gap-5 lg:flex">
 				{SOCIAL_LINKS.map((link) => (
-					<>
+					<React.Fragment key={link.id}>
 						{link.desktop === true && (
 							<a
 								key={link.id}
@@ -33,7 +34,7 @@ export const Header = () => {
 								<span className="sr-only">Social icon</span>
 							</a>
 						)}
-					</>
+					</React.Fragment>
 				))}
 			</div>
 		</header>
